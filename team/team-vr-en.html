@@ -10,7 +10,7 @@
 
   <main class="container">
     <section class="card">
-      <h1>VR Team <span class="muted">(Updated on Apr. 15, 2026)</span></h1>
+      <h1>VR Team <span class="muted">(Updated on Nov. 18, 2026)</span></h1>
       <p>
         <a href="#paper">Publications</a>
         |
@@ -19,21 +19,27 @@
 
       <h2 id="paper">Publications</h2>
       <ul class="pub-list">
-        <!--
         <li class="pub-item">
           <p class="pub-entry">
-            <span class="pub-text">作者. 题目. 期刊/会议. 年份; 卷(期):页码.</span>
+            <span class="pub-text">Guo, WY., Xu, SZ., Tong, Q., Li, JF., Yuan, PH., Zhu, SM., Zou, LL., Zhang, SH.
+              <b>Audiovisual Discrepancies in Large-Scale VR: Impact of Physical Sound Source Distance.</b>
+              IEEE Transactions on Visualization and Computer Graphics. 2026. Early Access.</span>
             <span class="pub-links">
-              <a class="pub-icon" href="填写 DOI 链接" target="_blank" rel="noopener noreferrer" title="DOI">
+              <a class="pub-icon" href="https://doi.org/10.1109/TVCG.2026.3747418" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
-              </a>
-              <a class="pub-icon" href="填写 GitHub 链接" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
               </a>
             </span>
           </p>
         </li>
-        -->
+        <li class="pub-item">
+          <p class="pub-entry">
+            <span class="pub-text">Yuan, PH., Xu, SZ., Tong, Q., Li, JF., Zou, LL., Luo, EX., Zhang, FL., Zhang, SH.
+              <b>Predictor-Dependent Reference-Frame Selection for Trajectory Forecasting Under Redirected Walking.</b>
+              2026 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), pp. 522–532.
+              <a href="https://www.computer.org/csdl/proceedings/ismar/2026/2lh4dp4ztdu" target="_blank" rel="noopener noreferrer">IEEE Proceedings</a>
+            </span>
+          </p>
+        </li>
         <li class="pub-item">
           <p class="pub-entry">
             <span class="pub-text">Li, JF., Xu, SZ., Tong, Q., Yuan, PH., Zou, LL., Luo, EX., Gan, QW., Zhang, SH.
@@ -42,9 +48,6 @@
             <span class="pub-links">
               <a class="pub-icon" href="https://doi.org/10.1016/j.cag.2025.104492" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
-              </a>
-              <a class="pub-icon" href="#" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
               </a>
             </span>
           </p>
@@ -74,9 +77,6 @@
               <a class="pub-icon" href="https://doi.org/10.1007/978-981-96-3679-2_18" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
               </a>
-              <a class="pub-icon" href="#" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
-              </a>
             </span>
           </p>
         </li>
@@ -90,9 +90,6 @@
               <a class="pub-icon" href="https://doi.org/10.1007/978-981-97-2095-8_14" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
               </a>
-              <a class="pub-icon" href="#" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
-              </a>
             </span>
           </p>
         </li>
@@ -102,19 +99,6 @@
   </main>
 
   <a class="back-to-top" href="#top" aria-label="Return to top" title="Return to top">↑</a>
-  <script>
-    const backToTopButton = document.querySelector(".back-to-top");
-
-    function toggleBackToTopButton() {
-      if (window.scrollY > 240) {
-        backToTopButton.classList.add("is-visible");
-      } else {
-        backToTopButton.classList.remove("is-visible");
-      }
-    }
-
-    window.addEventListener("scroll", toggleBackToTopButton, { passive: true });
-    toggleBackToTopButton();
-  </script>
+  <script src="../assets/back-to-top.js" defer></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 html {
+  --content-max-width: 960px;
   scroll-behavior: smooth;
 }
 
@@ -11,23 +12,16 @@ body {
   line-height: 1.8;
 }
 
-.nav-inner,
 .container {
-  max-width: 960px;
+  max-width: var(--content-max-width);
   margin: 0 auto;
-}
-
-.container {
   padding: 24px 18px 48px;
 }
 
 .nav {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
-}
-
-.nav-inner {
-  padding: 14px 18px;
+  padding: 14px max(18px, calc((100% - var(--content-max-width)) / 2));
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
@@ -67,10 +61,14 @@ h3 {
   padding: 0;
 }
 
-.resource-item {
+.resource-item,
+.pub-entry {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.resource-item {
   gap: 18px;
   padding: 16px 0;
   border-top: 1px solid #e5e7eb;
@@ -89,7 +87,6 @@ h3 {
 .resource-links {
   display: inline-flex;
   align-items: center;
-  gap: 0;
   flex-shrink: 0;
 }
 
@@ -129,6 +126,33 @@ h3 {
   line-height: 1.6;
 }
 
+.graduate-filter:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+.graduate-filter button {
+  padding: 4px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1d4ed8;
+  font: inherit;
+  cursor: pointer;
+}
+
+.graduate-filter button:hover {
+  border-color: #93c5fd;
+}
+
+.graduate-filter button[aria-pressed="true"] {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
 .pub-list {
   margin: 0;
   padding-left: 22px;
@@ -139,9 +163,6 @@ h3 {
 }
 
 .pub-entry {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 12px;
   margin: 0;
 }
@@ -181,12 +202,6 @@ h3 {
   display: block;
 }
 
-.pub-links .pub-icon[href="#"],
-.pub-links .pub-icon[href=""],
-.pub-links .pub-icon:not([href]) {
-  display: none;
-}
-
 .back-to-top {
   position: fixed;
   right: 24px;
@@ -220,8 +235,12 @@ h3 {
 }
 
 @media (max-width: 640px) {
-  .resource-item {
+  .resource-item,
+  .pub-entry {
     flex-direction: column;
+  }
+
+  .resource-item {
     gap: 10px;
   }
 
@@ -230,7 +249,6 @@ h3 {
   }
 
   .pub-entry {
-    flex-direction: column;
     gap: 6px;
   }
 

@@ -3,18 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
   <title>课题组 VIS 小组</title>
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body id="top">
   <nav class="nav">
-    <div class="nav-inner">
-      <a href="../index.html">首页</a>
-      <a href="../management/github.html">Git 仓库管理</a>
-      <a href="team-traj.html">Traj 小组</a>
-      <a href="team-vis.html">VIS 小组</a>
-      <a href="team-vr.html">VR 小组</a>
-    </div>
+    <a href="../index.html">首页</a>
+    <a href="team-antiuav.html">AntiUAV 小组</a>
+    <a href="team-vr.html">VR 小组</a>
   </nav>
 
   <main class="container">
@@ -32,21 +29,6 @@
 
       <h2 id="paper">发表论文</h2>
       <ul class="pub-list">
-        <!--
-        <li class="pub-item">
-          <p class="pub-entry">
-            <span class="pub-text">作者. 题目. 期刊/会议. 年份; 卷(期):页码.</span>
-            <span class="pub-links">
-              <a class="pub-icon" href="填写 DOI 链接" target="_blank" rel="noopener noreferrer" title="DOI">
-                <img src="../assets/imgs/doi.svg" alt="DOI">
-              </a>
-              <a class="pub-icon" href="填写 GitHub 链接" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
-              </a>
-            </span>
-          </p>
-        </li>
-        -->
         <li class="pub-item">
           <p class="pub-entry">
             <span class="pub-text">Yan, N., Zhu, S., Hou, K., Liu, X., Tong, Q.
@@ -56,9 +38,6 @@
             <span class="pub-links">
               <a class="pub-icon" href="https://doi.org/10.1007/978-981-95-5699-1_34" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
-              </a>
-              <a class="pub-icon" href="#" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
               </a>
             </span>
           </p>
@@ -72,9 +51,6 @@
               <a class="pub-icon" href="https://doi.org/10.3390/sym17081214" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
               </a>
-              <a class="pub-icon" href="#" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
-              </a>
             </span>
           </p>
         </li>
@@ -86,9 +62,6 @@
             <span class="pub-links">
               <a class="pub-icon" href="https://doi.org/10.3390/s25144519" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
-              </a>
-              <a class="pub-icon" href="#" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
               </a>
             </span>
           </p>
@@ -102,9 +75,6 @@
             <span class="pub-links">
               <a class="pub-icon" href="https://doi.org/10.1007/978-981-97-8502-5_12" target="_blank" rel="noopener noreferrer" title="DOI">
                 <img src="../assets/imgs/doi.svg" alt="DOI">
-              </a>
-              <a class="pub-icon" href="#" target="_blank" rel="noopener noreferrer" title="GitHub">
-                <img src="../assets/imgs/github.svg" alt="GitHub">
               </a>
             </span>
           </p>
@@ -177,19 +147,6 @@
   </main>
 
   <a class="back-to-top" href="#top" aria-label="回到页面顶部" title="回到顶部">↑</a>
-  <script>
-    const backToTopButton = document.querySelector(".back-to-top");
-
-    function toggleBackToTopButton() {
-      if (window.scrollY > 240) {
-        backToTopButton.classList.add("is-visible");
-      } else {
-        backToTopButton.classList.remove("is-visible");
-      }
-    }
-
-    window.addEventListener("scroll", toggleBackToTopButton, { passive: true });
-    toggleBackToTopButton();
-  </script>
+  <script src="../assets/back-to-top.js" defer></script>
 </body>
 </html>

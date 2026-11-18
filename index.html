@@ -8,13 +8,9 @@
 </head>
 <body>
   <nav class="nav">
-    <div class="nav-inner">
-      <a href="index.html">首页</a>
-      <a href="management/github.html">Git 仓库管理</a>
-      <a href="team/team-traj.html">Traj 小组</a>
-      <a href="team/team-vis.html">VIS 小组</a>
-      <a href="team/team-vr.html">VR 小组</a>
-    </div>
+    <a href="index.html">首页</a>
+    <a href="team/team-antiuav.html">AntiUAV 小组</a>
+    <a href="team/team-vr.html">VR 小组</a>
   </nav>
 
   <main class="container">
@@ -47,13 +43,9 @@
     <section class="card">
       <h2>内容入口</h2>
       <div class="link-grid">
-        <a class="topic-link" href="team/team-traj.html">
-          <span class="topic-title">Traj 小组</span>
-          <span class="topic-desc">轨迹预测、轨迹相似度相关成果。</span>
-        </a>
-        <a class="topic-link" href="team/team-vis.html">
-          <span class="topic-title">VIS 小组</span>
-          <span class="topic-desc">计算机视觉、多视角生成、立体匹配和跨视角定位相关成果。</span>
+        <a class="topic-link" href="team/team-antiuav.html">
+          <span class="topic-title">AntiUAV 小组</span>
+          <span class="topic-desc">无人机目标感知、航迹分析与信息融合相关成果。</span>
         </a>
         <a class="topic-link" href="team/team-vr.html">
           <span class="topic-title">VR 小组</span>
@@ -63,6 +55,10 @@
           <span class="topic-title">GitHub 仓库管理办法</span>
           <span class="topic-desc">组织结构、team 归属、仓库权限和成员变动流程。</span>
         </a>
+        <a class="topic-link" href="team/graduates.html">
+          <span class="topic-title">已毕业学生</span>
+          <span class="topic-desc">各小组毕业生的毕业年份与去向。</span>
+        </a>
       </div>
       <p class="muted">
         后续可继续增加其他内容入口。
@@ -71,19 +67,6 @@
   </main>
 
   <a class="back-to-top" href="#top" aria-label="回到页面顶部" title="回到顶部">↑</a>
-  <script>
-    const backToTopButton = document.querySelector(".back-to-top");
-
-    function toggleBackToTopButton() {
-      if (window.scrollY > 240) {
-        backToTopButton.classList.add("is-visible");
-      } else {
-        backToTopButton.classList.remove("is-visible");
-      }
-    }
-
-    window.addEventListener("scroll", toggleBackToTopButton, { passive: true });
-    toggleBackToTopButton();
-  </script>
+  <script src="assets/back-to-top.js" defer></script>
 </body>
 </html>
